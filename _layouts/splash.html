@@ -1,12 +1,23 @@
 ---
 custom_name: splash layout
 ---
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <title>{{page.title}}</title>
+  </head>
+
+  <body>
 <!-- some header content below -->
-<h1>placeholder header from {{layout.custom_name}}</h1>
+    <h1>placeholder header from {{layout.custom_name}}</h1>
 
-<!-- the "content" tag is used by liquid/jekyll to substitute in the content of any page that this layout is assigned to -->
-{{content}}
+    <!-- the "content" tag is used by liquid/jekyll to substitute in the content of any page that this layout is assigned to -->
+    {{content}}
 
 
-<!-- include a nav bar snippet -->
-{% include nav_bar.html %}
+    <!-- include a nav bar snippet -->
+    {% include nav_bar.html %}
+  </body>
+
+</html>
