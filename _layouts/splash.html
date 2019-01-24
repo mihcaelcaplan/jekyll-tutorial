@@ -1,9 +1,23 @@
-<!-- some header content below -->
-<h1>header</h1>
+<!-- necessary html to make the page work right -->
+<html>
 
-<!-- the "content" tag is used by liquid/jekyll to substitute in the content of any page that this layout is assigned to -->
-{{content}}
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <title>{{page.title}}</title>
+  </head>
 
+  <body>
 
-<!-- include a nav bar snippet -->
-{% include nav_bar.html %}
+  <!-- some header content below -->
+    <h1>header</h1>
+
+    <!-- the "content" tag is used by liquid/jekyll to substitute in the content of any page that this layout is assigned to -->
+    {{content}}
+
+    <!-- include a nav bar snippet -->
+    {% include nav_bar.html %}
+
+  </body>
+
+</html>
