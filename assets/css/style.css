@@ -1,0 +1,30 @@
+html{
+  font-family: Arial;
+
+}
+
+nav{
+  background-color: grey;
+  border-radius: 5px;
+}
+
+nav.a{
+  font-style: normal;
+}
+
+.box{
+  display: flex;
+  flex-flow: column;
+  border: thin solid grey;
+  background-color: grey;
+  border-radius: 5px;
+
+}
+
+.box_image{
+
+}
+
+.box_caption{
+
+}
