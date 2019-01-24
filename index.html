@@ -1,13 +1,14 @@
 ---
-title: splash
+title: My Ideas
 layout: splash
 ---
 <!-- the front matter, in dashes above, tells jekyll some key facts that it interprets to integrate the site -->
 <!-- variables like "title" can be accessed in the body using the schema page.title -->
 
-<h1>page.title</h1>
+<h2>{{page.title}}</h2>
 
 <!-- put a liquid for loop here to print out some contents of your data file -->
+
 {% for idea in site.data.ideas %}
 
   {%if idea.rating < 3 %}
